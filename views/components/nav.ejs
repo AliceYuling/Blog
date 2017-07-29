@@ -1,0 +1,30 @@
+<div class="nav">
+	<div class="ui grid">
+		
+		<div class="two column row">
+			<div class="column">
+				<a href="/posts">HOME</a>
+				<a href="/posts/archive">ARCHIVE</a>
+				<a href="/posts/sort/html">HTML/CSS</a>
+				<a href="/posts/sort/javascript">JAVASCRIPT</a>
+				<a href="/posts/sort/nodejs">NODEJS</a>
+			</div>
+			<div class="column">
+				<form method="post" action="/posts/search">
+					<div class="ui search">
+						<div class="ui icon input">
+							<input class="prompt" type="text" placeholder="search article..." value="" name="keyword">
+							<i class="search icon"></i>
+						</div>
+						<input type="submit" class="ui button" value="search" style="backgroundColor:green">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="four wide column"></div>
+		<div class="eight wide column">
+			<a href="/posts"><h1><%= blog.title %></h1></a>
+			<p></p>
+		</div>
+	</div>
+</div>
